@@ -1,0 +1,141 @@
+.card{
+
+    position: relative;
+    height:50rem;
+
+    &__side{
+    height: 50rem;
+    transition: all .5s;
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &--front{
+
+        background-color: $color-white;
+    }
+    
+    &--back{
+        background-color: $color-white;
+        transform: rotateY(180deg);
+
+        &--1{
+            background-image: linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark);
+        }
+    }
+
+    }
+
+
+    &:hover &__side--front{
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0deg);
+    }
+
+
+    //front style
+    &__picture{
+
+        height: 23rem;
+        background-size: cover;
+        background-blend-mode: screen;
+        --webkit-clip-path: polygon(0 0,100% 0,100% 80%,100% 80%,0 100%);
+        clip-path: polygon(0 0,100% 0,100% 80%,100% 80%,0 100%);
+
+        &--1{
+
+            background-image:linear-gradient(to right bottom,rgba($color-secondary-light,.8),rgba($color-secondary-dark,.8)), url(../img/nat-5.jpg);
+        }
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+        position: absolute;
+        top:12rem;
+        right: 2rem;
+        text-align: right;
+        width: 75%;
+
+
+    }
+
+
+    &__heading__span{
+
+        padding:.3rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1{
+
+            background-image:linear-gradient(to right bottom,rgba($color-secondary-light,1),rgba($color-secondary-dark,1));            
+        }
+    }
+
+    &__details{
+
+      
+        
+        & ul{
+            list-style-type: none;
+            width:60%;
+            margin: auto;
+           
+            & li{
+               
+                // padding:1.5rem;
+                text-align: center;
+                font-size: 1.5rem;
+                padding:1rem;
+                text-transform: uppercase;
+
+                &:not(:last-child){
+                    border-bottom: .1rem solid #eeeeee;
+                }
+            }
+        }
+    }
+
+
+    &__cta{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+    }
+
+     &__price-box{
+
+        text-align: center;
+            margin:5rem;
+        
+     }
+
+    &__price-only{
+
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+    }
+
+    &__price-value{
+        font-size: 6rem;
+        font-weight: 300;
+    }
+
+
+}
