@@ -29,6 +29,12 @@
         &--1{
             background-image: linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark);
         }
+        &--2{
+            background-image: linear-gradient(to right bottom,$color-primary-light,$color-primary-dark);
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom,$color-teritary-light,$color-teritary-dark);
+        }
     }
 
     }
@@ -56,6 +62,14 @@
 
             background-image:linear-gradient(to right bottom,rgba($color-secondary-light,.8),rgba($color-secondary-dark,.8)), url(../img/nat-5.jpg);
         }
+        &--2{
+
+            background-image:linear-gradient(to right bottom,rgba($color-primary-light,.8),rgba($color-primary-dark,.8)), url(../img/nat-6.jpg);
+        }
+        &--3{
+
+            background-image:linear-gradient(to right bottom,rgba($color-teritary-light,.8),rgba($color-teritary-dark,.8)), url(../img/nat-7.jpg);
+        }
     }
 
     &__heading{
@@ -64,8 +78,8 @@
         font-weight: 300;
         text-transform: uppercase;
         position: absolute;
-        top:12rem;
-        right: 2rem;
+        top:15rem;
+        right: 1rem;
         text-align: right;
         width: 75%;
 
@@ -82,6 +96,16 @@
         &--1{
 
             background-image:linear-gradient(to right bottom,rgba($color-secondary-light,1),rgba($color-secondary-dark,1));            
+        }
+
+
+        &--2{
+
+            background-image:linear-gradient(to right bottom,rgba($color-primary-light,1),rgba($color-primary-dark,1));            
+        }
+        &--3{
+
+            background-image:linear-gradient(to right bottom,rgba($color-teritary-light,1),rgba($color-teritary-dark,1));            
         }
     }
 
@@ -121,20 +145,30 @@
      &__price-box{
 
         text-align: center;
-            margin:5rem;
+        color:#fff;
+       
         
      }
 
     &__price-only{
 
-        font-size: 1.4rem;
+        font-size: 3rem;
         text-transform: uppercase;
+        font-weight: 400;
+
 
     }
 
     &__price-value{
         font-size: 6rem;
         font-weight: 300;
+
+    }
+
+
+    .btn{
+        margin-top: 8rem;
+
     }
 
 

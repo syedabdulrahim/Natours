@@ -48,6 +48,29 @@
    
     
 }
+
+
+&--green{
+    background-color: $color-primary-dark;
+    color: #fff;
+
+    &::after{
+
+        background-color:$color-primary-dark;
+    
+    }
+
+    &:hover::after{
+
+        transform: scale(1.5) ;
+        opacity: 0;
+        
+    } 
+   
+   
+    
+}
+
 &::after{
     content:"";
     display:inline-block;
