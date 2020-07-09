@@ -33,3 +33,29 @@
     // background-color: $color-grey-light-1;
     position: relative;
 }
+
+
+.section-book{
+
+    padding:15rem;
+    background-image: linear-gradient(to right bottom,$color-primary-dark,$color-primary-light);
+}
+
+
+.book{
+
+    background-image: linear-gradient(105deg ,
+                                    rgba(255,255,255,0.9) 0%,
+                                    rgba(255,255,255,0.9) 50%,
+                                   transparent 50% ),url('../../img/nat-10.jpg');
+    background-size: 100%;
+    height: 50rem;
+
+    
+    &__form{
+            
+        width: 50%;
+        padding:6rem;
+        // background-color: orangered;
+    }
+}
